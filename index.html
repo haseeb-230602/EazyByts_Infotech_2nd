@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#users">Users</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h1>Dashboard</h1>
+        <div class="stats">
+            <div class="stat">
+                <h3>Total Products</h3>
+                <p id="total-products">0</p>
+            </div>
+            <div class="stat">
+                <h3>Total Orders</h3>
+                <p id="total-orders">0</p>
+            </div>
+            <div class="stat">
+                <h3>Total Users</h3>
+                <p id="total-users">0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Management Section -->
+    <section id="products">
+        <h2>Manage Products</h2>
+        <form id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+            <label for="product-quantity">Quantity:</label>
+            <input type="number" id="product-quantity" required>
+            <button type="submit">Add Product</button>
+        </form>
+        <ul id="product-list"></ul>
+    </section>
+
+    <!-- Order Management Section -->
+    <section id="orders">
+        <h2>Manage Orders</h2>
+        <form id="order-form">
+            <label for="order-id">Order ID:</label>
+            <input type="text" id="order-id" required>
+            <label for="order-status">Status:</label>
+            <input type="text" id="order-status" required>
+            <button type="submit">Update Order</button>
+        </form>
+        <ul id="order-list"></ul>
+    </section>
+
+    <!-- User Management Section -->
+    <section id="users">
+        <h2>Manage Users</h2>
+        <form id="user-form">
+            <label for="user-name">User Name:</label>
+            <input type="text" id="user-name" required>
+            <label for="user-role">Role:</label>
+            <input type="text" id="user-role" required>
+            <button type="submit">Add User</button>
+        </form>
+        <ul id="user-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
